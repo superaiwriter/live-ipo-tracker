@@ -2,6 +2,9 @@
 const nextConfig = {
   /* config options here */
   devIndicators: false,
+  outputFileTracingIncludes: {
+    '/**': ['./data/india-ipos.json'],
+  },
 
   async redirects() {
     return [

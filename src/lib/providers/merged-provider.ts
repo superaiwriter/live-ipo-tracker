@@ -204,7 +204,7 @@ export class MergedIpoProvider implements IIpoProvider {
 
     for (const ipo of all) {
       if (ipo.status === 'open') openCount++;
-      if (ipo.status === 'upcoming') upcomingCount++;
+      if (ipo.status === 'upcoming' || ipo.status === 'confidentially_filed') upcomingCount++;
       if (isListingThisMonthIST(ipo.listing_date || ipo.ipo_date)) listingThisMonthCount++;
     }
 
