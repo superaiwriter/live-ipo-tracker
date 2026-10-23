@@ -2,14 +2,7 @@
 const nextConfig = {
   /* config options here */
   devIndicators: false,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+
   async redirects() {
     return [
       {
